@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #edf6f9;
+}
+
+:root{
+    --primary-text-color: blueviolet;
+    --secandry-text-color:black;
+}
+
+.container{
+    max-width: 1180px;
+    margin-inline:auto;
+}
+.flex{
+    display: flex;
+}
+/* Nav */
+
+.main-nav{
+    height: 60px;
+    color: #ced4da;
+    align-items: center;
+    margin-left: 20px;
+}
+
+nav{
+    background-color: #1b263b ;
+}
+
+/* Main */
+.main-content{
+    margin-top: 50px;
+    justify-content: center;
+    align-items:first baseline;
+    min-height: 100%;
+    max-width: 100%;
+}
+
+
+.box input{
+    font-family: 'Poppins', sans-serif;
+   color: #011627;
+    width:500px;
+    height: 35px;
+    border-radius: 4px;
+    border: 1px solid blueviolet;
+    padding-left: 5px;
+    font-size: 1rem;
+    position: relative;
+}
+#message{
+    position:fixed;
+    top: 150px;
+    width: 200px;
+
+}
+p{
+    /* display: inline; */
+    /* border: 1px solid; */
+    /* width: 200px; */
+}
+.box{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+.box button{
+    width: 120px;
+    height: 35px;
+    border-radius: 4px;
+    border: 1px solid blueviolet;
+    font-family: 'Poppins',sans-serif;
+    background-color: #233d4d;
+    color: #ffffff;
+    cursor: pointer;
+    align-self: flex-end;
+}
+
+.box button:hover{
+    background-color: #ffffff;
+    color:#233d4d;
+}
+
+.list{
+    margin-top: 10px;
+    background-color: #ced4da;
+    border-radius: 4px;
+    margin-inline: 20px;
+    position: relative;
+    
+
+}
+.list li{
+ 
+    padding: 25px;
+    font-size: 1.2rem;
+    list-style:decimal;
+}
+
+.closebtn{
+    color: aqua;
+    position:absolute;
+    right:10px;
+    cursor: pointer;
+    
+}
+.btn{
+     width:20px;
+     margin-right: 10px;
+     vertical-align: middle;
+     height: 20px;
+     background-color:black;
+}
+
+.text{
+    text-decoration: line-through;
+}
+
+@media screen and (max-width:551px) {
+    .box input{
+        width:300px;
+    }
+}
