@@ -100,7 +100,7 @@ p{
 
 }
 .list li{
- 
+    margin-left:5px;
     padding: 25px;
     font-size: 1.2rem;
     list-style:decimal;
