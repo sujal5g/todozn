@@ -96,22 +96,24 @@ p{
     border-radius: 4px;
     margin-inline: 20px;
     position: relative;
-    margin-left:8px;
-
+    line-break: auto;
+  
+    
 }
 .list li{
-    margin-left:5px;
+   cursor: pointer;
+    padding-right: 20px;
     padding: 25px;
+    text-align: justify;
     font-size: 1.2rem;
+    /* width: 100px; */
     list-style:decimal;
 }
 
-.closebtn{
-    color: aqua;
+.list li i{
     position:absolute;
-    right:10px;
+    right: 10px;
     cursor: pointer;
-    
 }
 .btn{
      width:20px;
@@ -120,13 +122,17 @@ p{
      height: 20px;
      background-color:black;
 }
-
 .text{
     text-decoration: line-through;
 }
-
 @media screen and (max-width:551px) {
     .box input{
         width:300px;
+    }
+    .list li{
+       width: 50%;
+    }
+    .list {
+        margin-left: 25px;
     }
 }
