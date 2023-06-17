@@ -1,30 +1,28 @@
-const item = document.querySelector("#display")
-const toDo = document.querySelector("#lists");
+let item = document.getElementById("display");
+const toDo = document.getElementById("lists");   
 
-           
-const newtask = () => {
+let newtask=()=>{
     if(item.value==""){
-        message.innerHTML="Enter New task";
+        message.innerHTML="Add New Task";
     }else{
-        const newel = document.createElement("li");
-    newel.innerHTML = `
-         ${item.value}
-        <i class="fas fa-times"></i>
-    `;
-    newel.querySelector("i").addEventListener(
-        "click",
-        function() {
-            newel.remove()
-        }
-    )
-    message.innerHTML="";
-    item.value="";
-    toDo.appendChild(newel);
+        const Task=document.createElement("li");
+        toDo.appendChild(Task);
+        Task.innerHTML=`${item.value}&nbsp<button id="remove" onclick="remove(this)">Delete</button>`;
+        item.value="";
+        save();
+        message.innerHTML="";
     }
-    
+  
+}
+const remove=(value)=>{
+    value.parentElement.remove()
+    save();
 }
 
-
-
-
-
+const save=()=>{
+    localStorage.setItem("Data",toDo.innerHTML)
+}
+const show=()=>{
+    toDo.innerHTML=localStorage.getItem("Data");
+}
+show();
