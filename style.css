@@ -22,6 +22,7 @@ body{
 }
 .flex{
     display: flex;
+    
 }
 /* Nav */
 
@@ -89,24 +90,27 @@ p{
     background-color: #ffffff;
     color:#233d4d;
 }
-
+.flex1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .list{
     margin-top: 10px;
     background-color: #ced4da;
     border-radius: 4px;
     margin-inline: 20px;
     position: relative;
-    line-break: auto;
+    width: 80%;
   
-    
 }
 .list li{
    cursor: pointer;
     padding-right: 20px;
     padding: 25px;
-    text-align: justify;
+   
     font-size: 1.2rem;
-    /* width: 100px; */
+   
     list-style:decimal;
 }
 
@@ -136,9 +140,7 @@ p{
     .box input{
         width:300px;
     }
-    .list li{
-       width: 50%;
-    }
+   
     .list {
         margin-left: 25px;
     }
